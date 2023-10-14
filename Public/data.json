@@ -1,0 +1,24 @@
+[
+  {
+    "month_number": 1,
+    "facecream": 2500,
+    "facewash": 1500,
+    "toothpaste": 5200,
+    "bathingsoap": 9200,
+    "shampoo": 1200,
+    "moisturizer": 1500,
+    "total_units": 21100,
+    "total_profit": 211000
+  },
+  {
+    "month_number": 2,
+    "facecream": 2630,
+    "facewash": 1200,
+    "toothpaste": 5100,
+    "bathingsoap": 6100,
+    "shampoo": 2100,
+    "moisturizer": 1200,
+    "total_units": 18330,
+    "total_profit": 183300
+  }
+]
