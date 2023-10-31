@@ -1,0 +1,71 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<!-- directive -->
+<!-- ngIf directive -->
+<!-- reference:- https://www.javatpoint.com/angular-8-ngif-directive -->
+
+<h1> Directives </h1>
+
+<h2> ngIf </h2>
+
+n is = {{n}}
+
+<div *ngIf="n > 2; else elseBlock">
+  n is greater than 2
+</div>
+
+<ng-template #elseBlock>
+  n is not greater than 2
+</ng-template>
+
+<!-- ngFor directive -->
+<!-- reference:- https://www.javatpoint.com/angular-8-ngfor-directive -->
+
+<h2> ngFor </h2>
+
+<li *ngFor="let item of items">
+  {{item}}
+</li>
+
+<!-- piping -->
+<!-- reference:- https://www.tutorialspoint.com/angular8/angular8_pipes.htm -->
+
+<h1> Piping </h1>
+<h2> Adding parameter </h2>
+
+<!-- adding parameter  -->
+<div>
+  Today's date :- {{presentDate}}
+</div>
+
+<div>
+  Date with uppercase :- {{presentDate | date:'fullDate' | uppercase}}
+<br />
+  Date with lowercase :- {{presentDate | date:'medium' | lowercase}}
+<br />
+</div>
+
+<!-- currency pipe -->
+<h2> Currency pipe </h2>
+
+<div>
+  <p>{{ amount | currency:'EUR'}}</p>
+  <p>{{ amount | currency:'INR' }}</p>
+</div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
