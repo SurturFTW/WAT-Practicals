@@ -1,0 +1,10 @@
+<h1>Registration Form</h1>
+<form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+    Name: <input type="text" formControlName="name">
+    <p class="error-message" *ngIf="name?.touched && name?.invalid">Name is invalid</p>
+    <br>
+    Email: <input type="email" formControlName="email">
+    <p class="error-message" *ngIf="email?.touched && email?.invalid">Email isinvalid</p>
+    <br>
+    <button [disabled]="registrationForm.invalid">Submit</button>
+</form>
